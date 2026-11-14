@@ -64,3 +64,6 @@ footer{background:var(--ink);color:#C9CCD3;padding:44px 0;font-size:.95rem}
 .related-card:hover{transform:translateY(-2px);box-shadow:0 12px 30px -18px rgba(63,47,107,.45)}
 .related-card .eyebrow{font-size:.72rem}
 .related-card strong{display:block;font-family:"Fredoka",sans-serif;font-weight:600;font-size:1.05rem;line-height:1.25;color:#24262B;margin-top:6px}
+
+/* contrast fix: eyebrow on mint card */
+.card-cta .eyebrow{color:#0B5A4C}
