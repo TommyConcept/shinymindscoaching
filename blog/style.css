@@ -43,7 +43,7 @@ blockquote cite{display:block;margin-top:10px;font-family:"Nunito",sans-serif;fo
 .cards{width:min(1160px,100% - 32px);margin-inline:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:8px 0 clamp(56px,8vw,88px)}
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:12px;transition:transform .2s,box-shadow .2s}
 .card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-.card h3{font-size:1.15rem;color:var(--plum)}
+.card h2{font-size:1.15rem;color:var(--plum);margin:0;letter-spacing:0}
 .card p{color:var(--muted);font-size:.98rem;margin:0}
 .card .more{margin-top:auto;font-weight:800;font-size:.92rem;color:var(--teal);text-decoration:none}
 .cards-sec .wrap{width:min(1160px,100% - 32px);margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
