@@ -245,6 +245,16 @@ footer{background:var(--ink);color:#C9CCD3;padding:44px 0;font-size:.95rem}
   .bubble{font-size:.92rem;padding:11px 14px}
   details{padding:2px 18px}
 }
+
+/* consent banner + analytics */
+.cookie{position:fixed;left:12px;right:12px;bottom:12px;z-index:9999;max-width:680px;margin-inline:auto;background:#fff;border:1px solid #E7E2F1;border-radius:20px;box-shadow:0 20px 50px -20px rgba(63,47,107,.45);padding:16px 18px;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;font-size:.9rem;line-height:1.5;color:#3D4A4A}
+.cookie[hidden]{display:none}
+.cookie p{margin:0;flex:1 1 260px}
+.cookie a{color:#17806D}
+.cookie-actions{display:flex;gap:10px;flex:0 0 auto}
+.cookie-btn{font:inherit;font-weight:800;border:0;border-radius:999px;padding:10px 18px;background:#17806D;color:#fff;cursor:pointer}
+.cookie-btn-ghost{background:transparent;color:#3F2F6B;border:1px solid #E7E2F1}
+.cookie-btn:focus-visible{outline:3px solid #3F2F6B;outline-offset:2px}
 </style>
 <script type="application/ld+json">
 {
@@ -337,6 +347,8 @@ footer{background:var(--ink);color:#C9CCD3;padding:44px 0;font-size:.95rem}
   ]
 }
 </script>
+<script src="/analytics.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M0JJ4X9EP7"></script>
 </head>
 <body>
 
@@ -571,11 +583,20 @@ footer{background:var(--ink);color:#C9CCD3;padding:44px 0;font-size:.95rem}
       <a href="/blog/"><svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Advice for parents</a>
       <a href="https://www.instagram.com/shinymindscoaching/" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>@shinymindscoaching</a>
       <a href="https://calendly.com/mramail_82/30min" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M8 2.5v4M16 2.5v4M3 10h18"/></svg>Book a free chat</a>
+      <a href="/privacy.html">Privacy</a>
       <span style="color:#9DA1AB">&copy; 2026 Shiny Minds Coaching</span>
     </div>
   </div>
 </footer>
 
 <!-- Stock photos via Unsplash (free licence): hug-sky 82NHIKIvKNc, clouds Mv3mEpWDhSM, mum-daughter-laughing a-_1PPjnbUg, field-hug wtgXcJIRLSU, hot-chocolate y0m5e6g0eR4, hug-blanket Z0heaB65P9k, record-player NWTO7QV704I. Portraits from @shinymindscoaching. -->
+
+<div class="cookie" id="sm-cookie" role="dialog" aria-labelledby="sm-cookie-title" hidden>
+  <p id="sm-cookie-title"><strong>Cookies.</strong> I use analytics cookies to see which pages help parents most. No ads, no profiles. <a href="/privacy.html">Read the privacy note</a>.</p>
+  <div class="cookie-actions">
+    <button type="button" class="cookie-btn" data-consent="yes">Accept</button>
+    <button type="button" class="cookie-btn cookie-btn-ghost" data-consent="no">Decline</button>
+  </div>
+</div>
 </body>
 </html>

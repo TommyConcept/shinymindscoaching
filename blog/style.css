@@ -67,3 +67,13 @@ footer{background:var(--ink);color:#C9CCD3;padding:44px 0;font-size:.95rem}
 
 /* contrast fix: eyebrow on mint card */
 .card-cta .eyebrow{color:#0B5A4C}
+
+/* consent banner + analytics */
+.cookie{position:fixed;left:12px;right:12px;bottom:12px;z-index:9999;max-width:680px;margin-inline:auto;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 20px 50px -20px rgba(63,47,107,.45);padding:16px 18px;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;font-size:.9rem;line-height:1.5;color:#3D4A4A}
+.cookie[hidden]{display:none}
+.cookie p{margin:0;flex:1 1 260px}
+.cookie a{color:var(--teal)}
+.cookie-actions{display:flex;gap:10px;flex:0 0 auto}
+.cookie-btn{font:inherit;font-weight:800;border:0;border-radius:999px;padding:10px 18px;background:var(--teal);color:#fff;cursor:pointer}
+.cookie-btn-ghost{background:transparent;color:var(--plum);border:1px solid var(--line)}
+.cookie-btn:focus-visible{outline:3px solid var(--plum);outline-offset:2px}
